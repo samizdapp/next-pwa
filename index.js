@@ -125,16 +125,16 @@ module.exports = (nextConfig = {}) => ({
       console.log(`> [PWA]   url: ${_sw}`)
       console.log(`> [PWA]   scope: ${_scope}`)
 
-      config.plugins.push(
-        new CleanWebpackPlugin({
-          cleanOnceBeforeBuildPatterns: [
-            path.join(_dest, 'workbox-*.js'),
-            path.join(_dest, 'workbox-*.js.map'),
-            path.join(_dest, sw),
-            path.join(_dest, `${sw}.map`)
-          ]
-        })
-      )
+//       config.plugins.push(
+//         new CleanWebpackPlugin({
+//           cleanOnceBeforeBuildPatterns: [
+//             path.join(_dest, 'workbox-*.js'),
+//             path.join(_dest, 'workbox-*.js.map'),
+//             path.join(_dest, sw),
+//             path.join(_dest, `${sw}.map`)
+//           ]
+//         })
+//       )
 
       // precache files in public folder
       let manifestEntries = additionalManifestEntries
